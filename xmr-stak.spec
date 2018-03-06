@@ -32,5 +32,5 @@ XMR-Stak is a universal Stratum pool miner. This miner version supports at this 
 %_bindir/*
 
 %changelog
-
+-Initial release placentiusz()gmail.com
 
