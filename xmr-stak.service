@@ -1,0 +1,13 @@
+[Unit]
+Description=Monero/Aeon All-in-One Mining Software
+After=syslog.target network.target
+ConditionPathExists=/etc/xmr-stak/config.txt
+ConditionPathExists=/etc/xmr-stak/cpu.txt
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xmr-stak  -c /etc/xmr-stak/config.txt --cpu /etc/xmr-stak/cpu.txt
+User=xmr-stak
+
+[Install]
+WantedBy=multi-user.target
